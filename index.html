@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="cal.css">
+</head>
+<body>
+<section id="s1">
+<form name="calc">
+    <table>
+        <tr>
+            <td>
+                <input type="text" class="t1" id="result">
+
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" class="input" name="one" value="1" onclick="calculate('1')">
+                <input type="button" class="input" name="two" value="2" onclick="calculate('2')">
+                <input type="button" class="input" name="three" value="3" onclick="calculate('3')">
+                <input type="button" class="input" class="operator" name="plus" value="+" onclick="operation('+')">
+                <br>
+                <input type="button" class="input" name="four" value="4" onclick="calculate('4')">
+                <input type="button" class="input" name="five" value="5" onclick="calculate('5')">
+                <input type="button" class="input" name="six" value="6" onclick="calculate('6')">
+                <input type="button" class="operator input" name="minus" value="-" onclick="operation('-')">
+                <br>
+                <input type="button" class="input" name="seven" value="7" onclick="calculate('7')">
+                <input type="button" class="input" name="eight" value="8" onclick="calculate('8')">
+                <input type="button" class="input" name="nine" value="9" onclick="calculate('9')">
+                <input type="button" class="operator input" name="times" value="*" onclick="operation('*')">
+                <br>
+                <input type="button" class="input" id="clear" name="clear" value="c" onclick="res()">
+                <input type="button" class="input" name="zero" value="0" onclick="calculate('0')">
+                <input type="button" class="input" name="doit" value="=" onclick="operation('=')">
+                <input type="button" class="operator1 input" name="div" value="/" onclick="operation('/')">
+                <br>
+            </td>
+        </tr>
+    </table>
+</form>
+</section>
+<script src="cal.js">
+</script>
+</body>
+</html>
